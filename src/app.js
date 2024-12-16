@@ -8,7 +8,7 @@ import  cors from "cors";
 const app = express()
 
 app.use(cors({
-    origin: 'https://tangerine-muffin-b59418.netlify.app/',
+    origin: '*',
     credentials: true
 }))
 app.use(morgan('dev'));

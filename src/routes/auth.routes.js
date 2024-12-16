@@ -14,7 +14,7 @@ router.post('/logout', logout)
 
 router.get('/verify', verifyToken)
 
-router.get('/profile',authRequired, profile)
+router.get('/profile', profile)
 
 
 // Nueva ruta para obtener el conteo de usuarios

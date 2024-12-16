@@ -11,11 +11,11 @@ import { createPreguntaSchema } from "../schemas/pregunta.schema.js";
 
 const router = Router()
 
-router.get('/tareas', authRequired, getPreguntas)
-router.get('/tareas/:id', authRequired, getPregunta)
-router.post('/tareas', authRequired, validateSchema(createPreguntaSchema), createPregunta)
-router.delete('/tareas/:id', authRequired, deletePregunta)
-router.put('/tareas/:id', authRequired, updatePregunta)
+router.get('/tareas', getPreguntas)
+router.get('/tareas/:id',  getPregunta)
+router.post('/tareas',  validateSchema(createPreguntaSchema), createPregunta)
+router.delete('/tareas/:id',  deletePregunta)
+router.put('/tareas/:id',  updatePregunta)
 
 
 
